@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "message_fastapi_project"
+version = "0.1.0"
+description = 'A Python Polylith example code repo'
+authors = [{ name = "David Vujic" }]
+
+requires-python = ">=3.8"
+
+dependencies = [
+  "fastapi~=0.106.0",
+  "uvicorn~=0.25.0",
+  "sqlalchemy~=2.0.23",
+  "confluent-kafka~=2.3.0",
+]
+
+[tool.hatch.build.hooks.polylith-bricks]
+
+[tool.polylith.bricks]
+"../../bases/example/message_api" = "example/message_api"
+"../../components/example/database" = "example/database"
+"../../components/example/dictionaries" = "example/dictionaries"
+"../../components/example/log" = "example/log"
+"../../components/example/message" = "example/message"
+"../../components/example/kafka" = "example/kafka"
+"../../components/example/schema" = "example/schema"

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my_gcp_function_project"
+version = "0.1.0"
+description = 'A Python Polylith example code repo'
+authors = [{ name = "David Vujic" }]
+
+requires-python = ">=3.8"
+
+dependencies = [
+  "functions-framework~=3.5.0",
+]
+
+[project.scripts]
+consumer = "example.consumer.core:main"
+
+[tool.hatch.build.force-include]
+"main.py" = "main.py" # added by the build process
+"requirements.txt" = "requirements.txt" # added by the build process
+
+[tool.hatch.build.hooks.polylith-bricks]
+
+[tool.polylith.bricks]
+"../../bases/example/greet_gcp_function" = "example/greet_gcp_function"
+"../../components/example/greeting" = "example/greeting"
+"../../components/example/log" = "example/log"

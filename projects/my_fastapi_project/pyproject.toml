@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my_fastapi_project"
+version = "0.0.1"
+description = 'A Python Polylith example code repo'
+authors = [{ name = "David Vujic" }]
+
+requires-python = ">=3.8"
+
+dependencies = [
+  "fastapi~=0.106.0",
+  "uvicorn~=0.25.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["example"]
+
+[tool.hatch.build.hooks.polylith-bricks]
+
+[tool.polylith.bricks]
+"../../bases/example/greet_api" = "example/greet_api"
+"../../components/example/greeting" = "example/greeting"
+"../../components/example/log" = "example/log"

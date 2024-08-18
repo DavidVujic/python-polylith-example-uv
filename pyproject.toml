@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python-polylith-example-with-uv"
+version = "0.1.0"
+description = "A Python Polylith example code repo"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "David Vujic" }]
+dependencies = [
+    "fastapi~=0.106.0",
+    "uvicorn~=0.25.0",
+    "functions-framework~=3.5.0",
+    "sqlalchemy~=2.0.23",
+    "confluent-kafka~=2.3.0",
+    "polylith-cli>=1.9.1",
+]
+
+[tool.uv]
+managed = true
+dev-dependencies = [
+  "mypy~=1.8.0",
+  "polylith-cli",
+  "pytest~=7.4.3",
+  "ruff~=0.2.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build]
+dev-mode-dirs = ["components", "bases", "development", "."]
+
+
+[tool.polylith.bricks]
+"bases/example/message_api" = "example/message_api"
+"bases/example/consumer" = "example/consumer"
+"bases/example/greet_api" = "example/greet_api"
+"bases/example/greet_gcp_function" = "example/greet_gcp_function"
+"bases/example/greet_aws_lambda" = "example/greet_aws_lambda"
+"components/example/message" = "example/message"
+"components/example/dictionaries" = "example/dictionaries"
+"components/example/greeting" = "example/greeting"
+"components/example/database" = "example/database"
+"components/example/schema" = "example/schema"
+"components/example/log" = "example/log"
+"components/example/kafka" = "example/kafka"
+
+[tool.ruff]
+exclude = [
+  ".git",
+  ".github",
+  "__pycache__",
+  ".mypy_cache",
+  ".ruff_cache",
+  "dist",
+  ".venv",
+  "./development/*.py",
+]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

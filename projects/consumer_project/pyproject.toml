@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling", "hatch-polylith-bricks"]
+build-backend = "hatchling.build"
+
+[project]
+name = "consumer_project"
+version = "0.1.0"
+description = 'A Python Polylith example code repo'
+authors = [{ name = "David Vujic" }]
+
+requires-python = ">=3.8"
+
+dependencies = [
+  "confluent-kafka~=2.3.0",
+]
+
+[project.scripts]
+consumer = "my_custom_ns.example.consumer.core:main"
+
+[tool.hatch.build.hooks.polylith-bricks]
+
+[tool.polylith.build]
+top-namespace = "my_custom_ns"
+
+[tool.polylith.bricks]
+"../../bases/example/consumer" = "example/consumer"
+"../../components/example/log" = "example/log"
+"../../components/example/kafka" = "example/kafka"
