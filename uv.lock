@@ -416,16 +416,16 @@ wheels = [
 
 [[package]]
 name = "polylith-cli"
-version = "1.14.2"
+version = "1.15.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "rich" },
     { name = "tomlkit" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a4/68/5dffd8dbf2a8b25a2998f886dac57539502147166b6eef27c7526269f3a4/polylith_cli-1.14.2.tar.gz", hash = "sha256:beede4407760451501031628cb167808c4023cc9d961d7c4bce8e5f1a692bec7", size = 29109 }
+sdist = { url = "https://files.pythonhosted.org/packages/45/31/4cf8f818dde51500d3423a1b5dc2cfa0a16c81ba013ea3f5068a1be6550e/polylith_cli-1.15.0.tar.gz", hash = "sha256:31a45eb3433a35895dcbe0120351a3e08b1c5ba79a2ead69f93c711d11548c42", size = 29145 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c3/dd/eafdba379d3929897e3261d126ba29b2467d8aaa025ad2c4fa21243f4490/polylith_cli-1.14.2-py3-none-any.whl", hash = "sha256:7a36910c318c45a435e576c1644032e08c59d316b2463960c402a03d2862350a", size = 48800 },
+    { url = "https://files.pythonhosted.org/packages/bf/ed/dd6b0dfca7728c203cc5251a0ade318e014bc2d0ef392df46e3f6b4e820c/polylith_cli-1.15.0-py3-none-any.whl", hash = "sha256:1819643836094480c0542ef8bf971477d12ffedecacb105841d68644f5e2ff41", size = 48809 },
 ]
 
 [[package]]
@@ -563,7 +563,6 @@ dependencies = [
     { name = "confluent-kafka" },
     { name = "fastapi" },
     { name = "functions-framework" },
-    { name = "polylith-cli" },
     { name = "sqlalchemy" },
     { name = "uvicorn" },
 ]
@@ -581,7 +580,6 @@ requires-dist = [
     { name = "confluent-kafka", specifier = "~=2.3.0" },
     { name = "fastapi", specifier = "~=0.106.0" },
     { name = "functions-framework", specifier = "~=3.5.0" },
-    { name = "polylith-cli", specifier = ">=1.9.1" },
     { name = "sqlalchemy", specifier = "~=2.0.23" },
     { name = "uvicorn", specifier = "~=0.25.0" },
 ]

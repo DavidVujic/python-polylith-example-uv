@@ -16,16 +16,15 @@ dependencies = [
     "functions-framework~=3.5.0",
     "sqlalchemy~=2.0.23",
     "confluent-kafka~=2.3.0",
-    "polylith-cli>=1.9.1",
 ]
 
 [tool.uv]
 managed = true
 dev-dependencies = [
   "mypy~=1.8.0",
-  "polylith-cli",
   "pytest~=7.4.3",
   "ruff~=0.2.0",
+  "polylith-cli",
 ]
 
 [tool.hatch.metadata]
