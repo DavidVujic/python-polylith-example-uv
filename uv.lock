@@ -1,6 +1,6 @@
 version = 1
 requires-python = ">=3.9"
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.13'",
     "python_full_version >= '3.13'",
 ]
@@ -416,16 +416,16 @@ wheels = [
 
 [[package]]
 name = "polylith-cli"
-version = "1.15.0"
+version = "1.16.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "rich" },
     { name = "tomlkit" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/45/31/4cf8f818dde51500d3423a1b5dc2cfa0a16c81ba013ea3f5068a1be6550e/polylith_cli-1.15.0.tar.gz", hash = "sha256:31a45eb3433a35895dcbe0120351a3e08b1c5ba79a2ead69f93c711d11548c42", size = 29145 }
+sdist = { url = "https://files.pythonhosted.org/packages/53/52/75a1834809a918e0bf56a57227a38783751dc1579ff86603aa99ad8dc086/polylith_cli-1.16.0.tar.gz", hash = "sha256:cb338661ebe8022afdc8cf661478d2482bac8b29d8e1519b6957ce4b7e558b61", size = 29271 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bf/ed/dd6b0dfca7728c203cc5251a0ade318e014bc2d0ef392df46e3f6b4e820c/polylith_cli-1.15.0-py3-none-any.whl", hash = "sha256:1819643836094480c0542ef8bf971477d12ffedecacb105841d68644f5e2ff41", size = 48809 },
+    { url = "https://files.pythonhosted.org/packages/8e/cb/45929f14921bc4da1c5471ebe1557b40963b029c34b05a276c6a0da81a6e/polylith_cli-1.16.0-py3-none-any.whl", hash = "sha256:ac80aeb0a9b5a3c4ec74a85b8fdaa2350377e236bbbeef11f28d40ea81ebf75a", size = 48957 },
 ]
 
 [[package]]
@@ -587,22 +587,22 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "mypy", specifier = "~=1.8.0" },
-    { name = "polylith-cli" },
+    { name = "polylith-cli", specifier = ">=1.16.0" },
     { name = "pytest", specifier = "~=7.4.3" },
     { name = "ruff", specifier = "~=0.2.0" },
 ]
 
 [[package]]
 name = "rich"
-version = "13.7.1"
+version = "13.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown-it-py" },
     { name = "pygments" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b3/01/c954e134dc440ab5f96952fe52b4fdc64225530320a910473c1fe270d9aa/rich-13.7.1.tar.gz", hash = "sha256:9be308cb1fe2f1f57d67ce99e95af38a1e2bc71ad9813b0e247cf7ffbcc3a432", size = 221248 }
+sdist = { url = "https://files.pythonhosted.org/packages/cf/60/5959113cae0ce512cf246a6871c623117330105a0d5f59b4e26138f2c9cc/rich-13.8.0.tar.gz", hash = "sha256:a5ac1f1cd448ade0d59cc3356f7db7a7ccda2c8cbae9c7a90c28ff463d3e91f4", size = 222072 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/87/67/a37f6214d0e9fe57f6ae54b2956d550ca8365857f42a1ce0392bb21d9410/rich-13.7.1-py3-none-any.whl", hash = "sha256:4edbae314f59eb482f54e9e30bf00d33350aaa94f4bfcd4e9e3110e64d0d7222", size = 240681 },
+    { url = "https://files.pythonhosted.org/packages/c7/d9/c2a126eeae791e90ea099d05cb0515feea3688474b978343f3cdcfe04523/rich-13.8.0-py3-none-any.whl", hash = "sha256:2e85306a063b9492dffc86278197a60cbece75bcb766022f3436f567cae11bdc", size = 241597 },
 ]
 
 [[package]]
@@ -725,7 +725,7 @@ wheels = [
 
 [[package]]
 name = "typer"
-version = "0.12.4"
+version = "0.12.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -733,9 +733,9 @@ dependencies = [
     { name = "shellingham" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d4/f7/f174a1cae84848ae8b27170a96187b91937b743f0580ff968078fe16930a/typer-0.12.4.tar.gz", hash = "sha256:c9c1613ed6a166162705b3347b8d10b661ccc5d95692654d0fb628118f2c34e6", size = 97945 }
+sdist = { url = "https://files.pythonhosted.org/packages/c5/58/a79003b91ac2c6890fc5d90145c662fd5771c6f11447f116b63300436bc9/typer-0.12.5.tar.gz", hash = "sha256:f592f089bedcc8ec1b974125d64851029c3b1af145f04aca64d69410f0c9b722", size = 98953 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ae/cc/15083dcde1252a663398b1b2a173637a3ec65adadfb95137dc95df1e6adc/typer-0.12.4-py3-none-any.whl", hash = "sha256:819aa03699f438397e876aa12b0d63766864ecba1b579092cc9fe35d886e34b6", size = 47402 },
+    { url = "https://files.pythonhosted.org/packages/a8/2b/886d13e742e514f704c33c4caa7df0f3b89e5a25ef8db02aa9ca3d9535d5/typer-0.12.5-py3-none-any.whl", hash = "sha256:62fe4e471711b147e3365034133904df3e235698399bc4de2b36c8579298d52b", size = 47288 },
 ]
 
 [[package]]
