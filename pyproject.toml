@@ -22,10 +22,13 @@ dependencies = [
 managed = true
 dev-dependencies = [
   "mypy~=1.8.0",
-  "polylith-cli>=1.16.0",
+  "polylith-cli>=1.19.1",
   "pytest~=7.4.3",
   "ruff~=0.2.0",
 ]
+
+[tool.uv.workspace]
+members = ["projects/*"]
 
 [tool.hatch.metadata]
 allow-direct-references = true
