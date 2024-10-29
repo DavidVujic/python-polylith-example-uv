@@ -15,10 +15,10 @@ dependencies = [
   "uvicorn~=0.25.0",
 ]
 
+[tool.hatch.build.hooks.polylith-bricks]
+
 [tool.hatch.build.targets.wheel]
 packages = ["example"]
-
-[tool.hatch.build.hooks.polylith-bricks]
 
 [tool.polylith.bricks]
 "../../bases/example/greet_api" = "example/greet_api"
