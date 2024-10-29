@@ -17,8 +17,10 @@ dependencies = [
   "confluent-kafka~=2.3.0",
 ]
 
+# This section is needed for the Hatchling build backend, to activate the polylith build hook.
 [tool.hatch.build.hooks.polylith-bricks]
 
+# This section is only needed when building sdists
 [tool.hatch.build.targets.wheel]
 packages = ["example"]
 
