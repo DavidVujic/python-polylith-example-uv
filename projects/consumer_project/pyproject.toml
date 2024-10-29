@@ -19,6 +19,9 @@ consumer = "my_custom_ns.example.consumer.core:main"
 
 [tool.hatch.build.hooks.polylith-bricks]
 
+[tool.hatch.build.targets.wheel]
+packages = ["my_custom_ns"]
+
 [tool.polylith.build]
 top-namespace = "my_custom_ns"
 

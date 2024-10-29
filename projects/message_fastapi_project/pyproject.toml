@@ -19,6 +19,9 @@ dependencies = [
 
 [tool.hatch.build.hooks.polylith-bricks]
 
+[tool.hatch.build.targets.wheel]
+packages = ["example"]
+
 [tool.polylith.bricks]
 "../../bases/example/message_api" = "example/message_api"
 "../../components/example/database" = "example/database"

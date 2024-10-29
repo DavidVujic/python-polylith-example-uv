@@ -23,6 +23,9 @@ consumer = "example.consumer.core:main"
 
 [tool.hatch.build.hooks.polylith-bricks]
 
+[tool.hatch.build.targets.wheel]
+packages = ["example"]
+
 [tool.polylith.bricks]
 "../../bases/example/greet_gcp_function" = "example/greet_gcp_function"
 "../../components/example/greeting" = "example/greeting"
