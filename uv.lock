@@ -523,16 +523,16 @@ wheels = [
 
 [[package]]
 name = "polylith-cli"
-version = "1.20.2"
+version = "1.21.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "rich" },
     { name = "tomlkit" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2d/d5/59cdbb8b28587bb642f22f94746007a316ad24958e0572c15c149cefd3f9/polylith_cli-1.20.2.tar.gz", hash = "sha256:72f07b9555d04badf21d79cb0e69f8f72f99ce03fbf37d5b8f345c7102dbea49", size = 29723 }
+sdist = { url = "https://files.pythonhosted.org/packages/67/6c/5fce23c79e5fc4683d484f19819d72fd567a361f2d9be02a374bd595b425/polylith_cli-1.21.0.tar.gz", hash = "sha256:0375a572f649e04195df8d38c7ee87610e57fa4d71e0802d71acf593f0b1046a", size = 29841 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/67/73/eeab1a02515f762a31b44538d79d4ca8168633a6d7fb60323000aac9c92c/polylith_cli-1.20.2-py3-none-any.whl", hash = "sha256:1d4c88b4cdd0ba5b34f0d42cfffa2777af9912984d6f668af5753ea9e590d079", size = 49710 },
+    { url = "https://files.pythonhosted.org/packages/53/07/bbd31c3bcfa1229979efe378d5a0dbd576caf296152990bbd21202e779b7/polylith_cli-1.21.0-py3-none-any.whl", hash = "sha256:7b637facfbf9b2e9226b961e535f59233ec217a7869038003991010779764353", size = 49830 },
 ]
 
 [[package]]
@@ -694,7 +694,7 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "mypy", specifier = "~=1.8.0" },
-    { name = "polylith-cli", specifier = ">=1.20.1" },
+    { name = "polylith-cli", specifier = ">=1.21.0" },
     { name = "pytest", specifier = "~=7.4.3" },
     { name = "ruff", specifier = "~=0.2.0" },
 ]
