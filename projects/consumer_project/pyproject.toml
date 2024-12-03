@@ -20,7 +20,7 @@ consumer = "my_custom_ns.example.consumer.core:main"
 # This section is needed for the Hatchling build backend, to activate the polylith build hook.
 [tool.hatch.build.hooks.polylith-bricks]
 
-# This section is only needed when building sdists
+# This section is needed for building
 [tool.hatch.build.targets.wheel]
 packages = ["my_custom_ns"]
 
