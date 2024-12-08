@@ -10,7 +10,7 @@ export-deps:
 	@echo "I haven't found a way to export deps from Hatch, as done in Poetry. Using hardcoded requirements.txt in this folder."
 
 build-gcp-project: export-deps add-gcp-entrypoint
-	uvx --from build pyproject-build --installer uv
+	uv build --out-dir ./dist
 
 gcp-package: build-gcp-project
 	mv dist/$(PROJECT_NAME)-py3-none-any.whl dist/function.zip
