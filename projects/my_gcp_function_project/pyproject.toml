@@ -14,9 +14,6 @@ dependencies = [
   "functions-framework~=3.5.0",
 ]
 
-[project.scripts]
-consumer = "example.consumer.core:main"
-
 [tool.hatch.build.force-include]
 "main.py" = "main.py" # added by the build process
 "requirements.txt" = "requirements.txt" # added by the build process
