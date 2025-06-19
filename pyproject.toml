@@ -68,6 +68,7 @@ line-length = 120
 select = ["E4", "E7", "E9", "F", "I"]
 
 [tool.pytest.ini_options]
+# testpaths = ["test"]
 addopts = [
   "--doctest-modules",
 ]
