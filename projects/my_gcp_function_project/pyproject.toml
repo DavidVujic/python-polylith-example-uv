@@ -8,10 +8,10 @@ version = "0.1.0"
 description = 'A Python Polylith example code repo'
 authors = [{ name = "David Vujic" }]
 
-requires-python = ">=3.8"
+requires-python = ">=3.12"
 
 dependencies = [
-  "functions-framework~=3.5.0",
+  "functions-framework~=3.9.2",
 ]
 
 [tool.hatch.build.force-include]
