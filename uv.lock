@@ -108,7 +108,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "confluent-kafka", specifier = "~=2.11.0" }]
+requires-dist = [{ name = "confluent-kafka" }]
 
 [[package]]
 name = "deprecation"
@@ -337,10 +337,10 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "confluent-kafka", specifier = "~=2.11.0" },
-    { name = "fastapi", specifier = "~=0.116.1" },
-    { name = "sqlalchemy", specifier = "~=2.0.43" },
-    { name = "uvicorn", specifier = "~=0.35.0" },
+    { name = "confluent-kafka" },
+    { name = "fastapi" },
+    { name = "sqlalchemy" },
+    { name = "uvicorn" },
 ]
 
 [[package]]
@@ -359,8 +359,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "fastapi", specifier = "~=0.116.1" },
-    { name = "uvicorn", specifier = "~=0.35.0" },
+    { name = "fastapi" },
+    { name = "uvicorn" },
 ]
 
 [[package]]
@@ -372,7 +372,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "functions-framework", specifier = "~=3.9.2" }]
+requires-dist = [{ name = "functions-framework" }]
 
 [[package]]
 name = "mypy"

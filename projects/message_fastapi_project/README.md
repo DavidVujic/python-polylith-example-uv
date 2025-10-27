@@ -5,7 +5,7 @@ Navigate to this folder (where the `pyproject.toml` file is)
 
 1. Export the dependencies (when using uv workspaces and having no project-specific lock-file):
 ``` shell
-uv export --no-emit-project --output-file requirements.txt
+uv export --no-install-project --format requirements-txt > requirements.txt
 ```
 
 2. Build a wheel:
