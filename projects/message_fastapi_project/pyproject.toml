@@ -11,10 +11,10 @@ authors = [{ name = "David Vujic" }]
 requires-python = ">=3.12"
 
 dependencies = [
-  "fastapi~=0.116.1",
-  "uvicorn~=0.35.0",
-  "sqlalchemy~=2.0.43",
-  "confluent-kafka~=2.11.0",
+  "fastapi",
+  "uvicorn",
+  "sqlalchemy",
+  "confluent-kafka",
 ]
 
 # This section is needed for the Hatchling build backend, to activate the polylith build hook.
