@@ -29,6 +29,16 @@ In those, you can specify the dependencies without version if you like. The fixe
 
 That's all you need! :tada:
 
+## Run a project on your local environment
+
+That's really simple. It's just like running code in a single-project repo.
+
+Example, running the "Greet API" FastAPI endpoints on localhost during development:
+``` bash
+uv run uvicorn example.greet_api.core:app --reload
+```
+
+
 ## Deploying a project
 There's several ways to deploy an individual project. In this repo, you will find a setup that should work
 well for most cases.
