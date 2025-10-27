@@ -38,6 +38,11 @@ Example, running the "Greet API" FastAPI endpoints on localhost during developme
 uv run uvicorn example.greet_api.core:app --reload
 ```
 
+or, by using the FastAPI CLI:
+
+``` bash
+uv run fastapi dev bases/example/greet_api/core.py
+```
 
 ## Deploying a project
 There's several ways to deploy an individual project. In this repo, you will find a setup that should work

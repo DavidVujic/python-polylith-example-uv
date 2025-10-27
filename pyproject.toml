@@ -11,7 +11,7 @@ requires-python = ">=3.12"
 license = "MIT"
 authors = [{ name = "David Vujic" }]
 dependencies = [
-    "fastapi~=0.116.1",
+    "fastapi[standard]~=0.116.1",
     "uvicorn~=0.35.0",
     "functions-framework~=3.9.2",
     "sqlalchemy~=2.0.43",
