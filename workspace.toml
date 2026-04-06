@@ -10,3 +10,12 @@ release = "v[0-9]-*"
 
 [tool.polylith.test]
 enabled = true
+
+[tool.polylith.projects.alias]
+message_fastapi_project = "message-api"
+my_aws_lambda_project = "aws lambda"
+my_gcp_function_project = "gcp function"
+
+[tool.polylith.projects.groups]
+messaging = ["message_fastapi_project", "consumer_project"]
+functions = ["my_aws_lambda_project", "my_gcp_function_project"]
