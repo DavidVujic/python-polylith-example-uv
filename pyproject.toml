@@ -11,19 +11,18 @@ requires-python = ">=3.12"
 license = "MIT"
 authors = [{ name = "David Vujic" }]
 dependencies = [
-    "fastapi[standard]~=0.129.0",
-    "uvicorn~=0.40.0",
-    "functions-framework~=3.10.0",
-    "sqlalchemy~=2.0.46",
-    "confluent-kafka~=2.13.0",
+    "fastapi[standard]~=0.136.3",
+    "functions-framework~=3.10.1",
+    "sqlalchemy~=2.0.50",
+    "confluent-kafka~=2.14.0",
 ]
 
 [dependency-groups]
 dev = [
-  "mypy~=1.19.1",
+  "mypy~=2.1.0",
   "polylith-cli>=1.48.1",
-  "pytest~=9.0.2",
-  "ruff~=0.15.0",
+  "pytest~=9.0.3",
+  "ruff~=0.15.16",
 ]
 
 [tool.uv]
