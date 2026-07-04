@@ -20,7 +20,7 @@ dependencies = [
 [dependency-groups]
 dev = [
   "mypy~=2.1.0",
-  "polylith-cli>=1.48.2",
+  "polylith-cli>=1.48.3",
   "pytest~=9.0.3",
   "ruff~=0.15.16",
 ]
