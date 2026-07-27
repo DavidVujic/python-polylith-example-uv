@@ -39,18 +39,18 @@ dev-mode-dirs = ["components", "bases", "development", "."]
 
 
 [tool.polylith.bricks]
-"bases/example/message_api" = "example/message_api"
 "bases/example/consumer" = "example/consumer"
 "bases/example/greet_api" = "example/greet_api"
-"bases/example/greet_gcp_function" = "example/greet_gcp_function"
 "bases/example/greet_aws_lambda" = "example/greet_aws_lambda"
-"components/example/message" = "example/message"
+"bases/example/greet_gcp_function" = "example/greet_gcp_function"
+"bases/example/message_api" = "example/message_api"
+"components/example/database" = "example/database"
 "components/example/dictionaries" = "example/dictionaries"
 "components/example/greeting" = "example/greeting"
-"components/example/database" = "example/database"
-"components/example/schema" = "example/schema"
-"components/example/log" = "example/log"
 "components/example/kafka" = "example/kafka"
+"components/example/log" = "example/log"
+"components/example/message" = "example/message"
+"components/example/schema" = "example/schema"
 
 [tool.ruff]
 exclude = [
